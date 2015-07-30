@@ -1,7 +1,7 @@
 package com.sprite.fang_pianke.activity;
 
-import com.sprite.fang_pianke.MainActivity;
 import com.sprite.fang_pianke.R;
+import com.sprite.fang_pianke.app;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,6 +13,8 @@ public class loadActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.load_activity);
+        app.getInstance().addActivity(this);
+        
 		Thread thread=new Thread(){
 			public void run() {
 				try {
@@ -26,6 +28,8 @@ public class loadActivity extends Activity {
 			};
 		};
 		thread.start();
+		
+		
 	}
 	
 	Handler handler=new Handler(){

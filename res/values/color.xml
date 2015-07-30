@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cc_red">#FF0000</color>
+    <color name="cc_black">#000000</color>
+    <color name="cc_green">#53868B</color>
+    <color name="cc_blue">#63B8FF</color>
+    <color name="cc_yellow">#FFFF00</color>
+    <color name="cc_magenta">#EE7AE9</color>
+    <color name="cc_chocolate">#B8860B</color>
+    <color name="cc_white">	#FFFFFF</color>
+ 
+</resources>
