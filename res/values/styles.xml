@@ -22,5 +22,21 @@
     <style name="fangPankeTheme" parent="AppBaseTheme">
         
     </style>
+    <!--   font  一般有 基础字体 （内容等base font）  菜单字体（menu font）  标题字体（h1 font）   -->
+    <style name="font_h1">
+        <item name="android:textColor">@color/cc_black</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="font_menu">
+        <item name="android:textColor">@color/cc_white</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    
+    <style name="font_base">
+        <item name="android:textSize">14dp</item>
+
+    </style>
 
 </resources>

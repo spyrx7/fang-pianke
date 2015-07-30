@@ -28,8 +28,6 @@ public class loadActivity extends Activity {
 			};
 		};
 		thread.start();
-		
-		
 	}
 	
 	Handler handler=new Handler(){

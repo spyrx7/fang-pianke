@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
         slidingmenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
         slidingmenu.setBehindWidth((int) ((BaseUtils.getWindowWidth(this))*0.4));
         slidingmenu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
-        slidingmenu.setBackgroundColor(Color.BLUE);
+        slidingmenu.setBackgroundColor(Color.parseColor("#757575"));
         slidingmenu.setFadeDegree(0.35f);
         slidingmenu.setMenu(R.layout.main_menu);
 	}
