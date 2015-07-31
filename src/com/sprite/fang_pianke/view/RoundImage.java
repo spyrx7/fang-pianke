@@ -55,13 +55,17 @@ public class RoundImage extends ImageView {
 	
 	public RoundImage(Context context, AttributeSet attrs) {
 		super(context, attrs);
+		 super.setScaleType(SCALE_TYPE);
+		initView(context,attrs);
+		
 	}
 	public RoundImage(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		
-		 super.setScaleType(SCALE_TYPE);
-
-		    TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CircleImageView, defStyle, 0);
+	}
+	
+	private void initView(Context context, AttributeSet attrs){
+		  TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CircleImageView);
 
 		    mBorderWidth = a.getDimensionPixelSize(R.styleable.CircleImageView_border_width, DEFAULT_BORDER_WIDTH);
 		    mBorderColor = a.getColor(R.styleable.CircleImageView_border_color, DEFAULT_BORDER_COLOR);
@@ -231,7 +235,6 @@ public class RoundImage extends ImageView {
 		    mShaderMatrix.postTranslate((int) (dx + 0.5f) + mBorderWidth, (int) (dy + 0.5f) + mBorderWidth);
 
 		    mBitmapShader.setLocalMatrix(mShaderMatrix);
-		
 	}
 
 }

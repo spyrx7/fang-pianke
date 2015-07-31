@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
     	slidingmenu=new SlidingMenu(this);
     	slidingmenu.setMode(SlidingMenu.LEFT);
         slidingmenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
-        slidingmenu.setBehindWidth((int) ((BaseUtils.getWindowWidth(this))*0.4));
+        slidingmenu.setBehindWidth(400);
         slidingmenu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
         slidingmenu.setBackgroundColor(Color.parseColor("#757575"));
         slidingmenu.setFadeDegree(0.35f);
