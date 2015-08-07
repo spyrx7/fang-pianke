@@ -8,33 +8,82 @@
     <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
         android:id="@+id/slidingMenu1"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
-      
-        <!--  头像 和 昵称   -->
-       <LinearLayout 
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:gravity="center_vertical"
-           android:orientation="horizontal">
-           <com.sprite.fang_pianke.view.RoundImage
-               android:id="@+id/headimg" 
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:src="@drawable/ic_launcher"
-               />
-           <TextView
-                android:id="@+id/headtext"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp" >
+
+        <!-- 头像 和 昵称 -->
+
+        <LinearLayout
+            android:id="@+id/menu_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.sprite.fang_pianke.view.RoundImage
+                android:id="@+id/headimg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="如此如此-copy"
-                android:textColor="@color/cc_white"
+                android:padding="10dp"
+                android:src="@drawable/ic_account_circle_white_36dp" />
+
+            <TextView
+                android:id="@+id/headtext"
                 style="@style/font_h1"
-               />
-           
-       </LinearLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="如此如此-copy"
+                android:textColor="@color/cc_white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/menu_download_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_top_layout"
+            android:padding="10dp"
+            android:src="@drawable/ic_file_download_white_36dp" />
+
+        <ImageView
+            android:id="@+id/menu_like_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_top_layout"
+            android:layout_toRightOf="@+id/menu_download_img"
+            android:padding="10dp"
+            android:src="@drawable/ic_favorite_white_36dp" />
+
+        <ImageView
+            android:id="@+id/menu_msg_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_top_layout"
+            android:layout_toRightOf="@+id/menu_like_img"
+            android:padding="10dp"
+            android:src="@drawable/ic_sms_white_36dp" />
+
+        <ImageView
+            android:id="@+id/menu_edit_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_top_layout"
+            android:layout_toRightOf="@+id/menu_msg_img"
+            android:padding="10dp"
+            android:src="@drawable/ic_edit_white_36dp" />
+
         
+        <LinearLayout
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_download_img"
+            android:orientation="vertical"
+            >
+              <include
+             layout="@layout/menu_list_nput" />
+        </LinearLayout>
         
-        
+       
         
     </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>
 
